@@ -1,0 +1,99 @@
+.menu_list {
+  text-align: left;
+  font-family: italic normal Rift, serif;
+  letter-spacing: .44px;
+  color: #000;
+  opacity: .8;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.font {
+  font-family: 'Bebas Neue', cursive;
+}
+.custom-text-button,
+.custom-outlined-button {
+  --mdc-theme-primary: #000000;
+
+
+}
+.form-group .form-control {
+  padding-left: 2.375rem;
+  box-shadow: none;
+  user-focus: none;
+}
+
+.form-group .form-control-icon {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.first-item-bg {
+  background-color: rgb(207, 217, 202);
+}
+
+.second-item-bg {
+  background-color: #92f5f7;
+}
+.carousel-inner > .carousel-item > img {
+  width:640px;
+  height:1000px;
+}
+.new_footer_wrap .contact_box a.help_grey {
+  text-align: center;
+  font: normal normal normal 14px/30px Rhode;
+  text-transform: uppercase;
+  letter-spacing: .64px;
+  color: #fff;
+  opacity: 1;
+  background: rgba(255,255,255,.1);
+  display: block;
+  margin: 8px auto 0;
+  padding: 9.5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.footer.bf_footer{
+  background: #000;
+  padding: 0;
+  border-color: #000;
+  position: relative;
+
+}
+.new_footer_wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.new_footer_wrap .contact_box h3 {
+  color: #fff;
+  margin: 18px 0 30px;
+  font: normal normal 600 14px/15px Hellix;
+  letter-spacing: .56px;
+}
+.new_footer_wrap .contact_box a.help_chat {
+  background: #fff;
+  opacity: 1;
+  display: block;
+  padding: 9.5px 20px;
+  text-align: center;
+  color: #000;
+  margin: 0 auto;
+  position: relative;
+  text-decoration: none;
+  font: normal normal normal 14px/30px Rhode;
+  text-transform: uppercase;
+  border-radius: 5px;
+}

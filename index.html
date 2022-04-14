@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>BikeStore — Bicicletas, peças, acessórios</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!--Material design-->
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!--Sidenav-->
+  <link rel="stylesheet" href="css/sidenav.css">
+</head>
+<body>
+
+<main>
+  <!--Barra de navegação-->
+  <div class="p-1 bg-dark text-white">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <span>Frete grátis em compras acima de R$50. <a href="#" class="link-light">Saiba mais.</a></span>
+
+      </div>
+    </div>
+  </div>
+  <header class="p-4 bg-light text-dark" tabindex="1">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <button onclick="openNav()" class="mdc-icon-button material-icons" style="font-size: 28px">
+            menu
+          </button>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <span class="fa fa-search form-control-icon material-icons">search</span>
+            <input type="text" class="form-control shadow-none font" style="font-size: 20px" placeholder="Buscar...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-end">
+            <button class="mdc-icon-button material-icons" style="font-size: 28px">
+              shopping_cart
+            </button>
+            <button class="mdc-icon-button material-icons" style="font-size: 28px" onclick="openLoginNav()">
+              login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!--Carrosel com ofertas-->
+  <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active first-item-bg center">
+          <img src="./img/highlights/hg1.png" class="d-block h-25 w-50" alt="...">
+        <div class="container">
+          <div class="carousel-caption text-dark text-end">
+            <h1>Topstone Alloy</h1>
+            <p>A bicicleta Cannondale que você precisava</p>
+            <p><a class="btn btn-lg btn-dark" href="#">Descubra</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item second-item-bg center">
+        <img src="./img/highlights/hg1.png" class="d-block h-25 w-50" alt="...">
+        <div class="container">
+          <div class="carousel-caption text-dark text-end">
+            <h1>Topstone Alloy</h1>
+            <p>A bicicleta Cannondale que você precisava</p>
+            <p><a class="btn btn-lg btn-secondary" href="#">Descubra</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item first-item-bg center">
+        <img src="./img/highlights/hg1.png" class="d-block h-25 w-50" alt="...">
+        <div class="container">
+          <div class="carousel-caption text-dark text-end">
+            <h1>Topstone Alloy</h1>
+            <p>A bicicleta Cannondale que você precisava</p>
+            <p><a class="btn btn-lg btn-dark" href="#">Descubra</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+  <!--Drawer lateral de categorias-->
+  <div id="menuCategory" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="container">
+      <div id="categoryContainer" class="row text-center">
+        <div id="bikeCategory" class="col menuCategoryHeader menuCategoryActive" onclick="onClickCategory(this.id)">
+        Bike
+        </div>
+        <div id="tiresCategory" class="col menuCategoryHeader" onclick="onClickCategory(this.id)">
+          Pneus
+        </div>
+        <div id="clearanceCategory" class="col menuCategoryHeader" onclick="onClickCategory(this.id)">
+          Promoções
+        </div>
+      </div>
+      <div id="viewAllContainer" class="row justify-content-center">
+        <a id="viewAllButton" class="viewAllBtn">
+          Ver tudo
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--Drawer lateral de login-->
+  <div id="loginNav" class="login-sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeLoginNav()">&times;</a>
+  </div>
+<!--barra inferior-->
+  <div class="container-fluid bg-dark">
+    <footer class="footer bf_footer" role="contentinfo">
+    </footer>
+  </div>
+</main>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
