@@ -1,0 +1,11 @@
+<svg id="Icon_16_-_Check" data-name="Icon 16 - Check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_113" data-name="Rectangle 113" class="cls-1" width="16" height="16"/>
+  <path id="Path_166" data-name="Path 166" d="M206.561,233.014a.5.5,0,0,1-.349-.141l-3.75-3.637a.5.5,0,1,1,.7-.717l3.4,3.3,7.9-7.662a.5.5,0,0,1,.7.718l-8.25,8A.5.5,0,0,1,206.561,233.014Z" transform="translate(-200.811 -220.514)"/>
+</svg>

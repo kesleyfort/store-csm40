@@ -133,7 +133,51 @@
   </div>
   <!--Drawer lateral de login-->
   <div id="loginNav" class="login-sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeLoginNav()">&times;</a>
+    <!--Header do drawer lateral de login-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col center-left font ms-5 signin-title">
+          Entrar
+        </div>
+        <div class="col center-right mb-3 me-5">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeLoginNav()">&times;</a>
+        </div>
+      </div>
+      <!--Form de login-->
+      <div class="row">
+        <form class="login-form-full form ms-5 mt-5 me-5">
+          <div class="form-field me-5">
+            <input class="form-input" name="login_email" id="login_email" type="email" placeholder="Endereço de e-mail">
+          </div>
+          <div class="form-field me-5">
+            <input class="form-input" id="login_pass" type="password" name="login_pass" placeholder="Senha">
+          </div>
+          <div class="me-5">
+            <a class="forgot-password" href="">Esqueceu sua senha?</a>
+            <input type="submit" class="button button--primary" value="Entrar">
+          </div>
+        </form>
+      </div>
+      <!--Divider-->
+      <div class="row">
+      <hr class="divider">
+      </div>
+      <!--Novo cliente-->
+      <div class="row">
+        <div class="ms-5 mt-5 me-5 font login-form-full new-user-div">
+          <h4>Ainda não tem conta?</h4>
+          <p>Crie uma conta para ter benefícios como:</p>
+          <ul>
+            <li>Compras mais rápidas</li>
+            <li>Rastreie seus pedidos</li>
+            <li>Salve produtos em listas</li>
+            <li>Acesse seus histórico de pedidos</li>
+          </ul>
+          <a href="" class="new_account me-5"><button class="button button--primary">Crie uma conta</button></a>
+        </div>
+      </div>
+    </div>
+
   </div>
 <!--barra inferior-->
   <div class="container-fluid bg-dark">

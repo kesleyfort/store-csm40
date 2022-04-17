@@ -83,7 +83,7 @@
   right: 0;
   background-color: white; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 10px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 .login-sidenav .closebtn {
@@ -94,10 +94,69 @@
   margin-left: 50px;
 }
 .login-sidenav a {
-  padding: 8px 8px 8px 32px;
+  /*padding: 8px 8px 8px 32px;*/
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  color: #333;
   display: block;
   transition: 0.3s;
+  text-align: right;
+  font-size: 15px;
+}
+.login-sidenav a:hover {
+  color: #f1f1f1;
+
+}
+.login-sidenav .form-input {
+  border: 1px solid #ebebeb;
+  background: #fefefe;
+  border-radius: 0;
+  text-align: left;
+  font: normal normal 500 16px/31px 'Bebas Neue';
+  letter-spacing: .64px;
+  color: #000;
+  opacity: 1;
+  width: 100%;
+  padding: 0.75rem 1rem;
+}
+.login-sidenav .form-field {
+  margin-bottom: 10px;
+}
+.login-sidenav .login-form-full {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 95%;
+}
+
+.login-sidenav .button {
+  text-align: center;
+  font: normal normal normal 20px/31px 'Bebas Neue';
+  letter-spacing: .64px;
+  color: #fff;
+  opacity: 1;
+  background: #000;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-radius: 0;
+  margin-top: 7px;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+.form {
+  margin: 0 0 1.5rem;
+}
+.signin-title {
+  font-size: 25px;
+}
+.form-actions-drop .a {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.divider {
+  width: 85%;
+  margin-left: 3rem;
+}
+.new-user-div {
+  font-size: 20px;
 }
