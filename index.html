@@ -1,193 +1,324 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="" name="description">
   <title>BikeStore — Bicicletas, peças, acessórios</title>
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
   <!--Material design-->
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Google fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <!--Sidenav-->
-  <link rel="stylesheet" href="css/sidenav.css">
+  <link href="css/sidenav.css" rel="stylesheet">
 </head>
 <body>
+<!--Barra de navegação-->
+<div class="p-1 bg-dark text-white">
+  <div class="container-fluid">
+    <div class="row text-center">
+      <span>Frete grátis em compras acima de R$50. <a class="link-light" href="#">Saiba mais.</a></span>
 
-<main>
-  <!--Barra de navegação-->
-  <div class="p-1 bg-dark text-white">
-    <div class="container-fluid">
-      <div class="row text-center">
-        <span>Frete grátis em compras acima de R$50. <a href="#" class="link-light">Saiba mais.</a></span>
-
-      </div>
     </div>
   </div>
-  <header class="p-4 bg-light text-dark" tabindex="1">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <button onclick="openNav()" class="mdc-icon-button material-icons" style="font-size: 28px">
-            menu
+</div>
+<header class="p-4 bg-light text-dark" style="border-bottom: 1px solid #f0f0f0!important;" tabindex="1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <button class="mdc-icon-button material-icons" onclick="openNav()" style="font-size: 28px">
+          menu
+        </button>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <span class="fa fa-search form-control-icon material-icons">search</span>
+          <input class="form-control shadow-none font" placeholder="Buscar..." style="font-size: 20px" type="text">
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-end">
+          <button class="mdc-icon-button material-icons" style="font-size: 28px">
+            shopping_cart
+          </button>
+          <button class="mdc-icon-button material-icons" onclick="openLoginNav()" style="font-size: 28px">
+            login
           </button>
         </div>
-        <div class="col">
-          <div class="form-group">
-            <span class="fa fa-search form-control-icon material-icons">search</span>
-            <input type="text" class="form-control shadow-none font" style="font-size: 20px" placeholder="Buscar...">
-          </div>
-        </div>
-        <div class="col">
-          <div class="text-end">
-            <button class="mdc-icon-button material-icons" style="font-size: 28px">
-              shopping_cart
-            </button>
-            <button class="mdc-icon-button material-icons" style="font-size: 28px" onclick="openLoginNav()">
-              login
-            </button>
-          </div>
-        </div>
       </div>
     </div>
-    </div>
-  </header>
-
-  <!--Carrosel com ofertas-->
-  <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-              aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active first-item-bg center">
-          <img src="./img/highlights/hg1.png" class="d-block h-25 w-50" alt="...">
-        <div class="container">
-          <div class="carousel-caption text-dark text-end">
-            <h1>Topstone Alloy</h1>
-            <p>A bicicleta Cannondale que você precisava</p>
-            <p><a class="btn btn-lg btn-dark" href="#">Descubra</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item second-item-bg center">
-        <img src="./img/highlights/hg1.png" class="d-block h-25 w-50" alt="...">
-        <div class="container">
-          <div class="carousel-caption text-dark text-end">
-            <h1>Topstone Alloy</h1>
-            <p>A bicicleta Cannondale que você precisava</p>
-            <p><a class="btn btn-lg btn-secondary" href="#">Descubra</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item first-item-bg center">
-        <img src="./img/highlights/hg1.png" class="d-block h-25 w-50" alt="...">
-        <div class="container">
-          <div class="carousel-caption text-dark text-end">
-            <h1>Topstone Alloy</h1>
-            <p>A bicicleta Cannondale que você precisava</p>
-            <p><a class="btn btn-lg btn-dark" href="#">Descubra</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Próximo</span>
-    </button>
   </div>
-  <!--Drawer lateral de categorias-->
-  <div id="menuCategory" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="container">
-      <div id="categoryContainer" class="row text-center">
-        <div id="bikeCategory" class="col menuCategoryHeader menuCategoryActive" onclick="onClickCategory(this.id)">
-        Bike
-        </div>
-        <div id="tiresCategory" class="col menuCategoryHeader" onclick="onClickCategory(this.id)">
-          Pneus
-        </div>
-        <div id="clearanceCategory" class="col menuCategoryHeader" onclick="onClickCategory(this.id)">
-          Promoções
+  </div>
+</header>
+
+<!--Carrosel com ofertas-->
+<div class="carousel carousel-dark slide" data-bs-ride="carousel" id="myCarousel">
+  <div class="carousel-indicators">
+    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#myCarousel"
+            type="button"></button>
+    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#myCarousel" type="button"></button>
+    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#myCarousel" type="button"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active first-item-bg center">
+      <img alt="..." class="d-block h-25 w-50" src="./img/highlights/hg1.png">
+      <div class="container">
+        <div class="carousel-caption text-dark text-end">
+          <h1>Topstone Alloy</h1>
+          <p>A bicicleta Cannondale que você precisava</p>
+          <p><a class="btn btn-lg btn-dark" href="#">Descubra</a></p>
         </div>
       </div>
-      <div id="viewAllContainer" class="row justify-content-center">
-        <a id="viewAllButton" class="viewAllBtn">
-          Ver tudo
+    </div>
+    <div class="carousel-item second-item-bg center">
+      <img alt="..." class="d-block h-25 w-50" src="./img/highlights/hg1.png">
+      <div class="container">
+        <div class="carousel-caption text-dark text-end">
+          <h1>Topstone Alloy</h1>
+          <p>A bicicleta Cannondale que você precisava</p>
+          <p><a class="btn btn-lg btn-secondary" href="#">Descubra</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item first-item-bg center">
+      <img alt="..." class="d-block h-25 w-50" src="./img/highlights/hg1.png">
+      <div class="container">
+        <div class="carousel-caption text-dark text-end">
+          <h1>Topstone Alloy</h1>
+          <p>A bicicleta Cannondale que você precisava</p>
+          <p><a class="btn btn-lg btn-dark" href="#">Descubra</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#myCarousel" type="button">
+    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#myCarousel" type="button">
+    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+<!--Drawer lateral de categorias-->
+<div class="sidenav" id="menuCategory">
+  <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+  <div class="container">
+    <ul class="nav nav-pills row text-justify" id="categoryContainer" role="tablist">
+      <li class="col menuCategoryHeader nav-item" role="presentation">
+        <a aria-controls="bike-subcategory" aria-selected="true" class="nav-link active" data-bs-target="#bike-subcategory"
+           data-bs-toggle="pill" id="bikeCategory" onclick="onClickCategory(this.id)" role="tab"
+           style="display: initial;">
+          Bike
+        </a>
+      </li>
+      <li class="col menuCategoryHeader nav-item" role="presentation">
+        <a aria-controls="tires-subcategory" aria-selected="false" class="nav-link" data-bs-target="#tires-subcategory"
+           data-bs-toggle="pill" id="tiresCategory" onclick="onClickCategory(this.id)"
+           style="display: initial;">Pneus</a>
+      </li>
+      <div class="col menuCategoryHeader justify-content-center" id="clearanceCategory" style="opacity: .8">
+        <a href="/promocoes.html" style="display: initial; color: #ef4e34">Promoções</a>
+      </div>
+    </ul>
+    <!--botão ver tudo-->
+    <div class="row justify-content-center" id="viewAllContainer">
+      <a class="viewAllBtn" id="viewAllButton">
+        Ver tudo
+      </a>
+    </div>
+    <div class="tab-content">
+      <!--Sub categorias bike-->
+      <div aria-labelledby="bikeCategory" class="row tab-pane fade show active" id="bike-subcategory" role="tabpanel">
+        <div class="col font">
+          <ul class="submenu-list">
+            <span class="submenu-category">Bicicletas</span>
+            <li class="submenu-item">
+              <a class="submenu-action" href="">Estrada</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-action" href="">Triathlon</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-action" href="">Gravel</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-action" href="">Cyclocross</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col font">
+          <ul class="submenu-list">
+            <h4>Marcas</h4>
+            <li class="submenu-item">
+              <a class="submenu-action" href="">Cannondale</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-action" href="">Specialized</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Sub categorias penus-->
+      <div aria-labelledby="tiresCategory" class="row tab-pane fade show" id="tires-subcategory" role="tabpanel">
+        <div class="col font">
+          <ul class="submenu-list">
+            <span class="submenu-category">Pneus</span>
+            <li class="submenu-item">
+              <a class="submenu-action" href="">Estrada</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-action" href="">Triathlon</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-action" href="">Gravel</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-action" href="">Cyclocross</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col font">
+          <ul class="submenu-list">
+            <h4>Marcas</h4>
+            <li class="submenu-item">
+              <a class="submenu-action" href="">Continental</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-action" href="">VIttoria</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Drawer lateral de login-->
+<div class="login-sidenav" id="loginNav">
+  <!--Header do drawer lateral de login-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col center-left font ms-5 signin-title">
+        Entrar
+      </div>
+      <div class="col center-right mb-3 me-5">
+        <a class="closebtn" href="javascript:void(0)" onclick="closeLoginNav()">&times;</a>
+      </div>
+    </div>
+    <!--Form de login-->
+    <div class="row">
+      <form class="login-form-full form ms-5 mt-5 me-5">
+        <div class="form-field me-5">
+          <input class="form-input" id="login_email" name="login_email" placeholder="Endereço de e-mail" type="email">
+        </div>
+        <div class="form-field me-5">
+          <input class="form-input" id="login_pass" name="login_pass" placeholder="Senha" type="password">
+        </div>
+        <div class="me-5">
+          <a class="forgot-password" href="">Esqueceu sua senha?</a>
+          <input class="button button--primary" type="submit" value="Entrar">
+        </div>
+      </form>
+    </div>
+    <!--Divider-->
+    <div class="row">
+      <hr class="divider">
+    </div>
+    <!--Novo cliente-->
+    <div class="row">
+      <div class="ms-5 mt-5 me-5 font login-form-full new-user-div">
+        <h4>Ainda não tem conta?</h4>
+        <p>Crie uma conta para ter benefícios como:</p>
+        <ul>
+          <li>Compras mais rápidas</li>
+          <li>Rastreie seus pedidos</li>
+          <li>Salve produtos em listas</li>
+          <li>Acesse seus histórico de pedidos</li>
+        </ul>
+        <a class="new_account me-5" href="">
+          <button class="button button--primary">Crie uma conta</button>
         </a>
       </div>
     </div>
   </div>
-  <!--Drawer lateral de login-->
-  <div id="loginNav" class="login-sidenav">
-    <!--Header do drawer lateral de login-->
-    <div class="container-fluid">
+
+</div>
+<!--barra inferior-->
+
+<div class="container-fluid bg-dark none-padding">
+  <footer class="footer bf_footer" role="contentinfo">
+    <div class="container-fluid font">
       <div class="row">
-        <div class="col center-left font ms-5 signin-title">
-          Entrar
+        <div class="col-auto">
+          <div class="vertical-flex">
+            <div class="contact_box pb-5 pe-5">
+              <h3>Fale Conosco</h3>
+              <a class="help_chat" href="javascript:void(0)">Chat</a>
+              <a class="help_email help_grey" href="mailto:vendas@bikestore.com.br">E-mail</a>
+              <span class="help_phone help_grey">(41) 99999-9999</span>
+            </div>
+          </div>
         </div>
-        <div class="col center-right mb-3 me-5">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeLoginNav()">&times;</a>
+        <div class="col-sm-3">
+          <div class="vertical-flex">
+            <div class="contact_box pb-5 pe-5">
+              <div class="box">
+                <h3>Suporte</h3>
+                <ul class="support-list">
+                  <li><a href="/contact-us/">Fale Conosco</a></li>
+                  <li><a href="#">Rastrear meu pedido</a></li>
+                  <li><a href="">Política de Privacidade</a></li>
+                  <li><a href="">Meios de envio</a></li>
+                  <li><a href="">Cancelamento de pedidos</a></li>
+                </ul>
+
+
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!--Form de login-->
-      <div class="row">
-        <form class="login-form-full form ms-5 mt-5 me-5">
-          <div class="form-field me-5">
-            <input class="form-input" name="login_email" id="login_email" type="email" placeholder="Endereço de e-mail">
+        <div class="col-sm-2">
+          <div class="vertical-flex">
+            <div class="contact_box pb-5 pe-5">
+              <div class="box">
+                <h3>Produtos</h3>
+                <ul class="support-list">
+                  <li><a href="/contact-us/">Bicicletas</a></li>
+                  <li><a href="#">Pneus</a></li>
+                  <li><a href="">Equipamentos</a></li>
+                  <li><a href="">Acessórios</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="form-field me-5">
-            <input class="form-input" id="login_pass" type="password" name="login_pass" placeholder="Senha">
+        </div>
+        <div class="col-sm-2">
+          <div class="vertical-flex">
+            <div class="contact_box pb-5 pe-5">
+              <div class="box">
+                <h3>Bike Store</h3>
+                <ul class="support-list">
+                  <li><a href="/contact-us/">Sobre nós</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="">Trabalhe conosco</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="me-5">
-            <a class="forgot-password" href="">Esqueceu sua senha?</a>
-            <input type="submit" class="button button--primary" value="Entrar">
-          </div>
-        </form>
-      </div>
-      <!--Divider-->
-      <div class="row">
-      <hr class="divider">
-      </div>
-      <!--Novo cliente-->
-      <div class="row">
-        <div class="ms-5 mt-5 me-5 font login-form-full new-user-div">
-          <h4>Ainda não tem conta?</h4>
-          <p>Crie uma conta para ter benefícios como:</p>
-          <ul>
-            <li>Compras mais rápidas</li>
-            <li>Rastreie seus pedidos</li>
-            <li>Salve produtos em listas</li>
-            <li>Acesse seus histórico de pedidos</li>
-          </ul>
-          <a href="" class="new_account me-5"><button class="button button--primary">Crie uma conta</button></a>
         </div>
       </div>
     </div>
+  </footer>
+</div>
 
-  </div>
-<!--barra inferior-->
-  <div class="container-fluid bg-dark">
-    <footer class="footer bf_footer" role="contentinfo">
-    </footer>
-  </div>
-</main>
-
-
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/main.js"></script>
 
 </body>

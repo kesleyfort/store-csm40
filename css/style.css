@@ -57,20 +57,6 @@
   width:640px;
   height:1000px;
 }
-.new_footer_wrap .contact_box a.help_grey {
-  text-align: center;
-  font: normal normal normal 14px/30px Rhode;
-  text-transform: uppercase;
-  letter-spacing: .64px;
-  color: #fff;
-  opacity: 1;
-  background: rgba(255,255,255,.1);
-  display: block;
-  margin: 8px auto 0;
-  padding: 9.5px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
 .footer.bf_footer{
   background: #000;
   padding: 0;
@@ -109,4 +95,85 @@
 
 .header-icon {
   font-size: 28px;
+}
+
+.text-justify {
+  -moz-text-align-last: justify;
+}
+
+.vertical-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contact_box {
+  background: #000;
+  min-width: 500px;
+  border-right: 2px solid #141414;
+}
+.options_box {
+  background: #000;
+  min-width: 500px;
+  border-right: 2px solid #141414;
+}
+
+.help_chat {
+  background: #fff;
+  opacity: 1;
+  display: block;
+  padding: 9.5px 20px;
+  text-align: center;
+  color: #000;
+  margin: 0 auto;
+  position: relative;
+  text-decoration: none;
+  font: normal normal normal 20px/30px 'Bebas Neue';
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.help_grey {
+  text-align: center;
+  font: normal normal normal 20px/30px 'Bebas Neue';
+  text-transform: uppercase;
+  letter-spacing: .64px;
+  color: #fff;
+  opacity: 1;
+  background: rgba(255,255,255,.1);
+  display: block;
+  margin: 8px auto 0;
+  padding: 9.5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+a:hover {
+}
+.contact_box h3 {
+  color: #fff;
+  margin: 18px 0 30px;
+  font: normal normal 600 18px/30px 'Bebas Neue';
+  letter-spacing: .56px;
+}
+.none-padding {
+  padding: 0 0 0 0 !important;
+}
+
+.support-list {
+  font: normal normal 600 18px/30px 'Bebas Neue';
+  list-style: none;
+}
+.support-list a{
+  font: normal normal 600 18px/30px 'Bebas Neue';
+  list-style: none;
+  text-decoration: none;
+  letter-spacing: .32px;
+  color: #fff;
+  opacity: .8;
+}
+.support-list a:hover {
+  color: #f1f1f1;
+  opacity: .3;
 }
