@@ -59,54 +59,37 @@
   </div>
 </header>
 
-<!--Carrosel com ofertas-->
-<div class="carousel carousel-dark slide" data-bs-ride="carousel" id="myCarousel">
-  <div class="carousel-indicators">
-    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#myCarousel"
-            type="button"></button>
-    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#myCarousel" type="button"></button>
-    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#myCarousel" type="button"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active first-item-bg center">
-      <img alt="..." class="d-block h-25 w-50" src="./img/highlights/hg1.png">
-      <div class="container">
-        <div class="carousel-caption text-dark text-end">
-          <h1>Topstone Alloy</h1>
-          <p>A bicicleta Cannondale que você precisava</p>
-          <p><a class="btn btn-lg btn-dark" href="#">Descubra</a></p>
+<!--Form cadastro usuário-->
+<div class="create-account-container">
+  <h1 class="font center">Fale Conosco</h1>
+  <form class="create-account-form" novalidate>
+    <div class="row g-3">
+      <div class="col-sm-6">
+        <label for="name" class="form-label">Nome e sobrenome</label>
+        <input type="text" class="form-control" id="name" placeholder="" value="" required>
+        <div class="invalid-feedback">
+          Nome e sobrenome é obrigatório
         </div>
       </div>
-    </div>
-    <div class="carousel-item second-item-bg center">
-      <img alt="..." class="d-block h-25 w-50" src="./img/highlights/hg1.png">
-      <div class="container">
-        <div class="carousel-caption text-dark text-end">
-          <h1>Topstone Alloy</h1>
-          <p>A bicicleta Cannondale que você precisava</p>
-          <p><a class="btn btn-lg btn-secondary" href="#">Descubra</a></p>
+      <div class="col-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="algumemail@provedor.com">
+        <div class="invalid-feedback">
+          Please enter a valid email address for shipping updates.
         </div>
       </div>
-    </div>
-    <div class="carousel-item first-item-bg center">
-      <img alt="..." class="d-block h-25 w-50" src="./img/highlights/hg1.png">
-      <div class="container">
-        <div class="carousel-caption text-dark text-end">
-          <h1>Topstone Alloy</h1>
-          <p>A bicicleta Cannondale que você precisava</p>
-          <p><a class="btn btn-lg btn-dark" href="#">Descubra</a></p>
-        </div>
+      <div class="form-group">
+        <label for="message">Mensagem</label>
+        <textarea class="form-control" id="message" rows="5"></textarea>
       </div>
     </div>
-  </div>
-  <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#myCarousel" type="button">
-    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
-  <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#myCarousel" type="button">
-    <span aria-hidden="true" class="carousel-control-next-icon"></span>
-    <span class="visually-hidden">Próximo</span>
-  </button>
+
+    <hr class="my-4">
+    <div class="col-auto text-center">
+      <button class="w-50 btn btn-dark btn-lg font" type="submit">Enviar</button>
+    </div>
+  </form>
+
 </div>
 <!--Drawer lateral de categorias-->
 <div class="sidenav" id="menuCategory">
@@ -243,7 +226,7 @@
           <li>Salve produtos em listas</li>
           <li>Acesse seus histórico de pedidos</li>
         </ul>
-        <a class="new_account me-5" href="./criar-conta.html">
+        <a class="new_account me-5" href="">
           <button class="button button--primary">Crie uma conta</button>
         </a>
       </div>
